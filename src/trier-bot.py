@@ -2,31 +2,11 @@ import configparser
 
 import click as click
 from telegram import ParseMode
-from telegram.ext import Updater, CommandHandler, PicklePersistence
+from telegram.ext import Updater, PicklePersistence
 
 from news import News
 
 news = News()
-
-
-def start_handler(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id,
-                             parse_mode=ParseMode.MARKDOWN_V2,
-                             text=r"""
-\# Title1
-[URL](https://google\.com)
-                             """)
-    bd = context.bot_data
-    if "chats" not in bd:
-        context.bot_data["chats"] = set()
-
-    context.bot_data["chats"].add(update.effective_chat.id)
-
-
-def stop_handler(update, context):
-    bd = context.bot_data
-    if "chats" in bd:
-        context.bot_data["chats"].remove(update.effective_chat.id)
 
 
 def refresh_feed(context):

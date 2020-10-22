@@ -1,0 +1,8 @@
+.idea
+config.ini
+*.pyc
+telegram.data
+rss.data
+.git
+.gitignore
+Dockerfile
