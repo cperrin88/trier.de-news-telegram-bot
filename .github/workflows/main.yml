@@ -39,7 +39,5 @@ jobs:
         # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
         uses: docker/build-push-action@v2
         with:
-
           # Server address of Docker registry. If not set then will default to Docker Hub
-          registry: ghcr.io
-          tags: cperrin88/trier.de-news-telegram-bot:latest
+          tags: ghcr.io/cperrin88/trier.de-news-telegram-bot:latest
