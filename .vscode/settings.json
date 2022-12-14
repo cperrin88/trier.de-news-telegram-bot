@@ -1,0 +1,10 @@
+{
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "poetry run black",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestPath": "poetry run pytest"
+}
