@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "trier-de-news-telegram-bot"
-version = "0.1.0"
+version = "1.0.0"
 description = ""
 authors = ["Christopher Perrin <cperrin88@users.noreply.github.com>"]
 readme = "README.md"
