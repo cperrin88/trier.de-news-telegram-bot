@@ -1,0 +1,9 @@
+[telegram]
+api_key = CHANGEME
+state_file = /data/trier-bot-telegram.data
+chat_id = @changeme
+
+[rss]
+feed_url = https://www.trier.de/icc/internet_de/nav/4cc/4cc4fbd0-1d9c-d311-c258-732ead2aaa78&all=true&page=1&pagesize=10&press=true&uTem=4a93090b-49e4-7271-94e8-c0f4087257ba
+refresh_interval = 60
+state_file = /data/trier-bot-rss.data

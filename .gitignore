@@ -3,3 +3,4 @@ config.ini
 *.pyc
 telegram.data
 rss.data
+.venv
